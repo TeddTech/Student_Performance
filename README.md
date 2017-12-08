@@ -1,7 +1,7 @@
 # student_performance
 
 ### 1.
-This project uses the ![Student Performance Data Set](http://archive.ics.uci.edu/ml/datasets/Student+Performance) from the UCI machine learning repositiry.
+This project uses the ![Student Performance Data Set](http://archive.ics.uci.edu/ml/datasets/Student+Performance) (http://archive.ics.uci.edu/ml/datasets/Student+Performance) from the UCI machine learning repositiry.
 
 ### 2.
 Do females perform better than males in school given all other factors are the same? And what is the most influential factor that decides how well a student performs.
