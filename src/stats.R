@@ -18,11 +18,16 @@ variable <- args[1]
 
 main <- function(){
   
-  print(table(variable$sex))
+  datt <- read.table(variable,sep=";",header=TRUE)
+  
+  print(table(datt$sex))
  
-  ttest <- t.test(variable$average_grade~variable$sex,
+  ttest <- t.test(datt$average_grade~datt$sex,
                   paired=F, var.eq=T)
   print(tidy(ttest))
+  
+  paste('Number of female obsevations', table(datt$sex)[[1]])
+  paste('Number of male observations', table(datt$sex)[[2]])
   
 }
 
