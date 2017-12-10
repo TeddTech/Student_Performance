@@ -1,5 +1,5 @@
 ---
-title: "Draft"
+title: "Grades Report"
 author: "Ted Thompson"
 date: "December 7, 2017"
 output: html_document
@@ -40,4 +40,4 @@ table(dat2$sex)
 tidy(ttest)
 ```
 
-Because the alpha value used in this analysis is 0.05 there is a statistically signifacant difference the perfomance of males vs females in school. Since the null hypothesis was rejected 0.046 which is very close to 0.05 further test are recommended.
+Because the alpha value used in this analysis is 0.05 there is a statistically signifacant difference the perfomance of males vs females in school. Since the null hypothesis was rejected 0.046 which is very close to 0.05 further test are recommended. In future studies one can consider the many other variables that are included in the data set used. Another thing that could be considered is conduct the study over differenct subjects.

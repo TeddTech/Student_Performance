@@ -11,7 +11,7 @@ Rscript src/get_data.R 'https://raw.githubusercontent.com/TeddTech/student_data/
 Rscript src/calculate_grades.R 'data/marks_data.csv' 'results/average_grades.csv'
 
 # This script creates a box plot of the average grade of males and females
-Rscript src/boxplot.R 'results/average_grades.csv' 'results/mvf.png'
+Rscript src/boxplot.R 'results/average_grades.csv' 'results/male_vs_female.png'
 
 # This script creates the resulting statistics for for the hypothesis
 Rscript src/stats.R 'results/average_grades.csv'
