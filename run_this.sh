@@ -14,7 +14,7 @@ Rscript src/calculate_grades.R 'data/marks_data.csv' 'results/average_grades.csv
 Rscript src/boxplot.R 'results/average_grades.csv' 'results/mvf.png'
 
 # This script creates the resulting statistics for for the hypothesis
-Rscript stats.R 'results/average_grades.csv'
+Rscript src/stats.R 'results/average_grades.csv'
 
 # create report
-Rscript -e 'ezknitr::ezknit("src/grades_report.Rmd", out_dir = "doc")'
+Rscript src/create_report.R

@@ -9,7 +9,7 @@
 # Usage: Rscript stats.R dat2
 
 
-
+.libPaths("C:/Users/Toniloba/Documents/R/win-library/3.4")
 # read in command line arguments
 args <- commandArgs(trailingOnly = TRUE)
 variable <- args[1]
@@ -18,17 +18,16 @@ variable <- args[1]
 
 main <- function(){
   
-  datt <- read.table(variable,sep=";",header=TRUE)
-  
-  print(table(datt$sex))
+  datt <- read.csv(variable,header=TRUE)
  
   ttest <- t.test(datt$average_grade~datt$sex,
                   paired=F, var.eq=T)
-  print(tidy(ttest))
   
-  paste('Number of female obsevations', table(datt$sex)[[1]])
-  paste('Number of male observations', table(datt$sex)[[2]])
-  
+  print('Number of female obsevations:')
+  print(table(datt$sex)[[1]])
+  print('Number of male observations:')
+  print(table(datt$sex)[[2]])
+  return(broom::tidy(ttest))
 }
 
 

@@ -20,13 +20,14 @@ var_dir <- args[2]
 #define main function
 
 main <- function(){
-  dat2 <- read.table(var_data,sep=";",header=TRUE)
-  mvf <- boxplot(dat2$average_grade~dat2$sex,
-          las=1, ylab="Grade", xlab="Gender", 
-          main="Difference Grades Between Male and Females")
+  dat2 <- read.csv(var_data,header=TRUE)
+  # a <- 
+  # b <- 
   
   png(filename= var_dir)
-  plot(mvf)
+  boxplot(dat2$average_grades~dat2$sex,
+          las=1, ylab="Grade", xlab="Gender", 
+          main="Difference Grades Between Male and Females")
   dev.off()
 }
 
