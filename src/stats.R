@@ -8,8 +8,9 @@
 #
 # Usage: Rscript stats.R dat2
 
-
+# set path
 .libPaths("C:/Users/Toniloba/Documents/R/win-library/3.4")
+
 # read in command line arguments
 args <- commandArgs(trailingOnly = TRUE)
 variable <- args[1]

@@ -32,19 +32,12 @@ main <- function(){
   
   dat2 <- data.frame(sex = dat1$sex, average_grades, age = dat1$age)
 
-  #dat2 <- dplyr::mutate(dat1,average_grade = (dat1$G1+ dat1$G2+ dat1$G3)/3)
-
   
   #write results
-  write.csv(dat2, var_dir)
-  #grades <- write.csv(dat2, var_dir)
+  grades <- write.csv(dat2, var_dir)
 
   
   paste('Location of calculated data with average grade of each student is written inside the following variable: grades')
-}
-
-ave <- function(){
-  
 }
 
 #call main function

@@ -21,9 +21,8 @@ var_dir <- args[2]
 
 main <- function(){
   dat2 <- read.csv(var_data,header=TRUE)
-  # a <- 
-  # b <- 
-  
+
+  #create plot
   png(filename= var_dir)
   boxplot(dat2$average_grades~dat2$sex,
           las=1, ylab="Grade", xlab="Gender", 
