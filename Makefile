@@ -2,7 +2,7 @@
 
 ##Ted Thompson, December 2017
 
-##This script runs the full analysis, presents the results at the end and is the driver scrip for this project
+##This script runs the full analysis, presents the results at the end and is the driver script for this project
 ##usage: make all
 
 ##run top to bottom
