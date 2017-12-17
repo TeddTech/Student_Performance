@@ -1,6 +1,6 @@
 # student_performance
 
-This projects test to see if there is difference in perfomance between male and females. This is exucuted by taking the average performace male performance in a subject and comparing it to the average female performance in a subject. The t-test is used to see how likely the null hypothesis is of occuring.
+This projects test to see if there is difference in perfomance between male and females. This is exucuted by taking the average performance male performance in a subject and comparing it to the average female performance in a subject. The t-test is used to see how likely the null hypothesis is of occuring.
 
 There are two data sets provided in the `data` folder one for a set of students studied in math class another for that same set of students studied in portuguese class. The source code provided for this analysis was create for the math data set but can also be run on the portuguese data set. To run the anaylsis open up shell and run `bash run_this.sh`. This driver script runs each script in the `src` with inputs already entered. You may also or run each script individually but you will have to enter the input for each script yourself.
 
