@@ -12,7 +12,7 @@ make all
 to undo analysis:
 
 ```
-clear all
+make clean
 ```
 
 To run scripts individually
