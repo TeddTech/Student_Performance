@@ -9,6 +9,14 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
+## Do females perform better than males in school?
+
+This analysis attempts to answer.Do females perform better than males in school given all other factors are the same? And what is the most influential factor that decides how well a student performs.The hypothesis presesnted is the average performance of female students differ from the average perfromace of male students.
+
+This project uses the Student Performance Data Set (http://archive.ics.uci.edu/ml/datasets/Student+Performance) from the UCI machine learning repositiry. I to use R to wrangle the data organize and create new features. I also have a summary table summarizing key statistics. A boxplot is shown for my visulization.
+
+
 ```{r}
 library(tidyverse)
 library(broom)

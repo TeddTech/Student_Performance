@@ -9,19 +9,17 @@ Scripts should be ran in the follwing order:
 * `stats.R` where you written the results of `calculate_grades.R`   input 2: Where you would like the result to go 
 * `create_report.R` Does not take any inputs
 
-### 1.
-This project uses the ![Student Performance Data Set](http://archive.ics.uci.edu/ml/datasets/Student+Performance) (http://archive.ics.uci.edu/ml/datasets/Student+Performance) from the UCI machine learning repositiry.
+If the analysis is unable to run due to the calculate_grades.R script go inside the script and use `.libPaths` to set the path to where the required libraires are located.
+The libraries required for this analysis is tidyverse and ezknitr.
 
-### 2.
-Do females perform better than males in school given all other factors are the same? And what is the most influential factor that decides how well a student performs.
+Usage example:
 
-### 3.
-The average performance of female students differ from the average perfromace of male students.
+```
+# in src/calculate_grades.R
 
-### 4.
-I plan to use R to wrangle the data organize and create new features if necessary. I will also have a summary table summarizing key statistics. I plan on using a boxplot for my first visulization and a interaction plot built using ggplot `geom_line()` function. Other methods I may use to visualize the data may include a dot plot and bat chart.
-
-
+R_LIBS_USER=c("C:/Users/Toniloba/Documents/R/win-library/3.4")
+.libPaths("C:/Users/Toniloba/Documents/R/win-library/3.4")
+```
 ## by Ted Thompson
 
 ### 2017
